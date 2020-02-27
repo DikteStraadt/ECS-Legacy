@@ -71,6 +71,13 @@ namespace ECS.Unit.Test
             Assert.That(_window.RunSelfTest(), Is.EqualTo(true));
         }
 
+        [Test]
+        public void Test_ECS_UpperThreshold()
+        {
+            _uut.UpperTemperatureThreshold = 35;
+
+            Assert.That(_uut.UpperTemperatureThreshold, Is.EqualTo(35));
+        }
 
     }
 }
